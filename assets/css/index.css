@@ -11,6 +11,8 @@
     min-height: 256px;
     min-width: 256px;
     background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.5;
 }
 
 .hidden {
