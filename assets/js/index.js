@@ -75,7 +75,9 @@ function animation_step(time) {
         viewport_height - moveable_rect.height,
     ];
     
-    let speed = (2.0 * state.timescale_factor) / Math.SQRT2;
+    const params = new URLSearchParams(document.location.search);
+    let paramSpeed = parseFloat(params.get("speed"));
+    let speed = (paramSpeed ? paramSpeed : 1.5 * state.timescale_factor) / Math.SQRT2;
     
     let x = moveable_rect.x;
     let y = moveable_rect.y;
