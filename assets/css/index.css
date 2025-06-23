@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.bouncer {
+    position: absolute;
+    background-image: url("../img/slagloftet.png");
+    min-height: 256px;
+    min-width: 256px;
+    background-size: contain;
+}
+
+.hidden {
+    visibility: hidden;
+}
